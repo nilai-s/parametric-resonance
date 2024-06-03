@@ -1,0 +1,25 @@
+name = "baseline"
+
+[parameters]
+m0 = 5
+H  = 2
+g  = 0
+w  = 0 
+a  = 1
+v  = 10
+
+[solver_opts.axion]
+log_x_min = -5
+log_x_max =  1
+x_n_pts    = 256 
+solver   = "numeric"
+
+[solver_opts.correlator]
+log_x_min = -5
+log_x_max =  1
+log_u_min = -1
+log_u_max =  3
+u_n_pts    =  30
+interp   = "linear"
+epsrel   = 1e-6
+epsabs   = 1e-8
